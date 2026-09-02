@@ -485,7 +485,7 @@ router.post('/products', requireAdmin, validateCsrf, async (req, res) => {
     });
 
     res.status(201).json({
-      message: 'Товар создан и отправлен на проверку',
+      message: 'Товар успешно опубликован',
       product: normalizeProduct(product),
     });
   } catch (error) {
